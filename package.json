@@ -1,0 +1,19 @@
+{
+  "name": "gizem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/bundle.scss assets/css/bundle.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.0.4",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^8.3.0"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
+}
