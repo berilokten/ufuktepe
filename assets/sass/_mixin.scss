@@ -1,0 +1,21 @@
+//mixin styles start
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin HorCenter {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@mixin VerCenter {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+// mixin styles end

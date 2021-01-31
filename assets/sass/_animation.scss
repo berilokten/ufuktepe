@@ -1,0 +1,30 @@
+@keyframes backInLeft {
+  0% {
+    width: 100%;
+    transform: translateX(-2000px) scale(.7);
+    opacity: .7;
+  }
+
+  80% {
+    width: 100%;
+    transform: translateX(0px) scale(.7);
+    opacity: .7;
+  }
+
+  100% {
+    width: 100%;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.backInLeft {
+  -webkit-animation: backInLeft 1.5s;
+  animation: backInLeft 1.5s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+html:not(.no-js) .au-values-wrapper [data-aos^=fade][data-aos^=fade] {
+  opacity: 0.3;
+}

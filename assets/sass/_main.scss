@@ -1,0 +1,266 @@
+body {
+  background-color: $background-color;
+  color: $white-color;
+}
+
+.main-container {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.section {
+  padding: 15rem 0;
+}
+.about-us-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-color;
+  color: $header-bg-scroll-color;
+  text-align: center;
+  .about-us-content {
+    padding: 1.8rem 3.6rem 3.6rem;
+  }
+}
+
+.headding-text {
+  font-size: 1.6rem;
+  color: $main-bg-color;
+  font-weight: 600;
+  position: absolute;
+  top: 7rem;
+}
+
+.border-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: .2rem solid $main-bg-color;
+  max-width: 85rem;
+}
+
+.transform-text {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(3rem);
+}
+.main-headding {
+  font-family: $headingFont;
+  @include HorCenter;
+  top: -6rem;
+  background: $white-color;
+  padding: 1rem;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.practice-area-wrapper {
+  padding: 15rem 6.4rem 7.5rem;
+}
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.card {
+  position: relative;
+  display: flex;
+  height: 26rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(33.33%);
+  transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform: rotateX(0deg);
+  transform-origin: center right;
+  transition: transform 1s;
+  background-color: $white-color;
+  cursor: pointer;
+  * {
+    pointer-events: none;
+  }
+  &:hover {
+    background-color: $main-bg-color;
+    .svg-icon {
+      fill: $white-color;
+    }
+    .pa-text {
+      color: $white-color;
+    }
+  }
+}
+
+.isFlipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.practice-area-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .practice-area-item {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 6.4rem 3.2rem;
+    cursor: pointer;
+    transition: 0.6s;
+    border: solid 0.1rem #1e2024;
+    color: #1e2024;
+    backface-visibility: hidden;
+  }
+}
+.front {
+  transform: rotateY(0deg);
+}
+.back {
+  transform: rotateY(180deg);
+  .practice-area-item {
+    padding: 2.4rem 1.2rem;
+    .pa-text {
+      text-align: left;
+      font-size: 1.2rem;
+      padding-top: 1.6rem;
+    }
+  }
+}
+.pa-text {
+  padding-top: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.contact-us-header {
+  margin: 7.5rem 0;
+}
+.contact-us-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $header-bg-scroll-color;
+  background-color:rgba(255,255,255,0.5);
+  padding: 5.6rem;
+  max-width: 65rem;
+  text-align: center;
+  .top-text {
+    font-size: 2rem;
+    color: rgba(20, 23, 30, 0.60);
+  }
+  .heading {
+    font-family: $headingFont;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 15px 0 32px;
+    letter-spacing: 2;
+    line-height: 1.5;
+  }
+  .call-us-no {
+    color: $main-bg-color;
+    font-weight: 600;
+  }
+}
+.contact-us-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 7.5rem 6.4rem 15rem;
+}
+.contact-info-wrapper {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2.4rem;
+  padding-left: 1.6rem;
+  background: linear-gradient(to right, #190A05, #691c32);
+}
+.contact-info-text {
+  padding-left: .8rem;
+  line-height: 2;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+.contact-form {
+  max-width: 752px;
+  width: 100%;
+}
+
+.footer {
+  background-color: $white-color;
+  color: $header-bg-scroll-color;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  padding: 1.6rem 6.4rem;
+}
+.au-values-wrapper {
+  display: flex;
+  padding: 15rem 6.4rem 7.5rem;
+}
+
+.au-values-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 45rem;
+}
+.au-values-heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  .au-values-main-heading {
+    font-family: $headingFont;
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  .au-values-main-subheading {
+    color: rgba(216, 216, 216, 0.7);
+  }
+}
+
+
+.au-values-no {
+  font-family: $headingFont;
+  color: $main-bg-color;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.au-value {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  .au-values-heading {
+    display: flex;
+    align-items: center;
+  }
+  .au-values-text{
+   color: rgba(216, 216, 216, 0.7);;
+  }
+}
+.au-values-image-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.lawyer-text-wrapper {
+  display: flex;
+}
+.lawyer-info {
+  padding: 7.5rem 6.4rem 15rem;
+  .lawyer-text {
+    display: flex;
+    text-align: justify;
+    font-size: 14px;
+    color: rgba(216, 216, 216, 0.7);
+  }
+}

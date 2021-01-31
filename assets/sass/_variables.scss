@@ -1,0 +1,20 @@
+// Fonts
+$systemFont: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans,
+  ubuntu, cantarell, "Helvetica Neue", sans-serif;
+$mainFont: "Inter", sans-serif, $systemFont;
+$headingFont: 'Lora', serif;
+
+//mobile resolutions
+$mobile: "screen and (max-width: 497px)";
+$tablet: "screen and (max-width: 680px)";
+$desktop: "screen and (max-width: 1200px)";
+
+// main colors
+$background-color: #323848; //body background
+$main-bg-color: #691c32;
+$white-color: #ffffff;
+$grey-color: #c3c3c3;
+$hover-color: #862c46;
+
+// menu
+$header-bg-scroll-color: #242a35;

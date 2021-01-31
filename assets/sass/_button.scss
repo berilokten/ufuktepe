@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  width: 30rem;
+  color: $white-color;
+  background-color: $main-bg-color;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.5s ease;
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem;
+    &:hover {
+      background-size: 100% 100%;
+      background-color: $hover-color;
+    }
+  }
+}

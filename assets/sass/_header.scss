@@ -1,0 +1,58 @@
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &.main-header {
+    height: 650px;
+    background-image: url("/assets/images/header-bg.jpg");
+  }
+  &.about-us-header {
+    position: relative;
+    justify-content: flex-start;
+    height: 270px;
+    background-image: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(88, 77, 77, 0.65), 
+      rgba(88, 77, 77, 0.65)
+    ),
+    /* bottom, image */
+    url("/assets/images/about-us-header.jpg");
+  }
+  &.contact-us-header {
+    background-image: url("/assets/images/contact-us-header-bg.jpg");
+    padding: 12rem 0;
+  }
+}
+
+.header-text {
+  @include absCenter;
+  max-width: 860px;
+  width: 100%;
+  font-family: $headingFont;
+  position: absolute;
+  font-size: 4.2rem;
+  line-height: 1.7;
+  text-align: center;
+}
+.au-header-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  transform: translate(0, -50%);
+  width: 325px;
+  align-items: flex-start;
+  background-color: $main-bg-color;
+  padding: 3.2rem;
+  .au-header-heading {
+    font-size: 3.2rem;
+    margin-bottom: 16px;
+  }
+  .au-header-text {
+    line-height: 1.5;
+  }
+}
